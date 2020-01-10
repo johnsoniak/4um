@@ -49,6 +49,14 @@ namespace {
             return true;
         }
 
+        // Funkcja wylogowywania 
+        function logoutUser() {
+            global $engine;
+            $engine->mysql->where("sid", $this->sid);
+            $engine->mysql->update($engine->prefix."sessions", array("uid" => 0));
+            header("Location: ".$engine->domain);
+            return true;
+        }
 
         // Funkcja logowania użytkownika (zwraca True lub False)
         function loginUser($username, $password) {

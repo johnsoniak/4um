@@ -24,7 +24,6 @@ switch ($action) {
         }
         
         break;
-
     case "register":
         if (!isset($user->id) || $user->id == 0) {
             $engine->title = "Rejestracja";
@@ -34,6 +33,8 @@ switch ($action) {
             header("Location: ".$engine->domain."/");
         }
         break;
+    case "logout":
+        $user->logoutUser();
     default:
         //$engine->addDisplay("portal.tpl");
         $engine->display();
