@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+	Options -MultiViews
+	RewriteEngine On
+
+
+	 
+
+	RewriteRule ^action/([a-zA-Z0-9]+)/$ index.php?action=$1
+
+</IfModule>

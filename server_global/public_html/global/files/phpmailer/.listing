@@ -1,0 +1,8 @@
+drwxr-xr-x    4 2925866    net4um.net       2048 Aug 25 10:43 .
+drwxr-xr-x   13 2925866    net4um.net       2048 Oct  4 20:29 ..
+-rw-r--r--    1 2925866    net4um.net       1689 Aug 25 10:43 PHPMailerAutoload.php
+-rw-r--r--    1 2925866    net4um.net     130185 Aug 25 10:43 class.phpmailer.php
+-rw-r--r--    1 2925866    net4um.net      10805 Aug 25 10:43 class.pop3.php
+-rw-r--r--    1 2925866    net4um.net      38761 Aug 25 10:43 class.smtp.php
+drwxr-xr-x    2 2925866    net4um.net       2048 Aug 25 10:43 language
+drwxr-xr-x    3 2925866    net4um.net       2048 Aug 25 10:43 test
