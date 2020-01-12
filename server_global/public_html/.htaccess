@@ -6,5 +6,6 @@
 	 
 
 	RewriteRule ^action/([a-zA-Z0-9]+)/$ index.php?action=$1
+	RewriteRule ^activate/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?action=activate&username=$1&code=$2
 
 </IfModule>

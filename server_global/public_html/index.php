@@ -1,5 +1,6 @@
 <?php
 require("global/config.php");
+require("global/functions.php");
 require("global/engine.class.php");
 require("global/users.class.php");
 
@@ -22,7 +23,20 @@ switch ($action) {
         } else {
             header("Location: ".$engine->domain."/");
         }
-        
+        break;
+    case "activate":
+        /* Page for Activation user Profile */
+        $username = checkInput($_GET["username"]);
+        $code = checkInput($_GET["code"]);
+
+        $engine->mysql->where("username", $username);
+        $engine->mysql->where("SecretCode", $code);
+        if ($engine->mysql->update($engine->prefix."accounts", array("active" => 1)))
+            $engine->error("success", "Twoje konto zostało aktywowane. Teraz możesz się zalogować.");
+        else
+            $engine->error("danger", "Podano złe dane do aktywowania konta.");
+
+        header("Location: ".$engine->domain."/");
         break;
     case "register":
         if (!isset($user->id) || $user->id == 0) {
@@ -36,7 +50,7 @@ switch ($action) {
     case "logout":
         $user->logoutUser();
     default:
-        //$engine->addDisplay("portal.tpl");
+        $engine->addDisplay("portal.tpl");
         $engine->display();
         break;
 }
