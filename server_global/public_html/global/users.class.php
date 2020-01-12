@@ -16,6 +16,10 @@ namespace {
 
         public $username;
 
+
+        public $allUsers;
+        public $lastUser;
+
         /* User Browser */
         protected $browser;
 
@@ -31,8 +35,10 @@ namespace {
             } else {
                 $this->sid = $_COOKIE[$engine->name];
             }
-            
-              
+            $engine->mysql->get($engine->prefix."accounts", "username, count(*) as cnt");
+            $stats = $engine->mysql->getLastQuery();
+            $this->allUsers = $stats["cnt"];
+            $this->lastUser = $stats["username"];
             
             $engine->smarty->assign("user", $this);
             $this->createSession();

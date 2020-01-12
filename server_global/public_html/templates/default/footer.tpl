@@ -8,7 +8,7 @@
 						<div class="span12" data-motopress-type="dynamic-sidebar" data-motopress-sidebar-id="footer-sidebar-1">
 							<h3>Statystyki</h3>
 							
-							<p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span><font style="font-size:17px;"> Posiadamy 0 zarejestrowanych użytkowników. Ostatnio zarejestrował się <a href="{$engine->domain}/profile/" style="color:#000!important">nikt</a>.</font></p>
+							<p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span><font style="font-size:17px;"> Posiadamy {$user->allUsers} zarejestrowanych użytkowników. Ostatnio zarejestrował się <a href="{$engine->domain}/profile/" style="color:#000!important">{$user->lastUser}</a>.</font></p>
 							<p style="line-height:10px;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><font style="font-size:17px;"> Użytkownicy aktywni przez ostatnie 5 minut:</font></p>
 								
 								
