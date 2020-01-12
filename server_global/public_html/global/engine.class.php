@@ -143,7 +143,7 @@ namespace {
                 "type" => $type,
                 "value" => $value
             );
-            setcookie("error", serialize($err), time()+(60*5));
+            setcookie("error", serialize($err), time()+(60*5), "/");
         }
 
         public function clearError() {

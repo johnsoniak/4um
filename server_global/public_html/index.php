@@ -31,12 +31,15 @@ switch ($action) {
 
         $engine->mysql->where("username", $username);
         $engine->mysql->where("SecretCode", $code);
-        if ($engine->mysql->update($engine->prefix."accounts", array("active" => 1)))
+        $engine->mysql->update($engine->prefix."accounts", array("active" => 1));
+        if ($engine->mysql->count == 1) {
             $engine->error("success", "Twoje konto zostało aktywowane. Teraz możesz się zalogować.");
-        else
+            header("Location: ".$engine->domain."/");
+        } else {
             $engine->error("danger", "Podano złe dane do aktywowania konta.");
-
-        header("Location: ".$engine->domain."/");
+            header("Location: ".$engine->domain."/");
+        }
+        
         break;
     case "register":
         if (!isset($user->id) || $user->id == 0) {
@@ -44,7 +47,7 @@ switch ($action) {
             $engine->addDisplay("register.tpl");
             $engine->display();
         } else {
-            header("Location: ".$engine->domain."/");
+            
         }
         break;
     case "logout":
