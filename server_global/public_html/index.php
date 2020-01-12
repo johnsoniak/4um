@@ -10,7 +10,7 @@ $user = new Users();
 
 
 if (isset($_GET["action"]))
-    $action = $_GET["action"];
+    $action = checkInput($_GET["action"]);
 else
     $action = false;
 
@@ -47,11 +47,30 @@ switch ($action) {
             $engine->addDisplay("register.tpl");
             $engine->display();
         } else {
-            
+            header("Location: ".$engine->domain."/");
         }
+        break;
+    case "profile":
+        $username = checkInput($_GET["username"]);
+        $engine->mysql->where("username", $username);
+        $profile = $engine->mysql->getOne($engine->prefix."accounts");
+        if (isset($profile["id"]) || $profile["id"] > 0) {
+            $engine->title = "Profil ".$profile["username"];
+            $engine->smarty->assign("profile", $profile);
+            $engine->addDisplay("profile.tpl");
+            $engine->display();
+        } else {
+            header("Location: ".$engine->domain."/404");
+        }
+        break;
+    case "404":
+        $engine->title = "Nie znaleziono";
+        $engine->addDisplay("404.tpl");
+        $engine->display();
         break;
     case "logout":
         $user->logoutUser();
+        break;
     default:
         $engine->addDisplay("portal.tpl");
         $engine->display();

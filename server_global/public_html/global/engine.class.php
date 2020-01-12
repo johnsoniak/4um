@@ -137,6 +137,7 @@ namespace {
             $this->smarty->display("footer.tpl");
         }
 
+        /* Function Display Error */
         public function error($type, $value) {
             $err = array(
                 "is" => 1,
@@ -146,6 +147,7 @@ namespace {
             setcookie("error", serialize($err), time()+(60*5), "/");
         }
 
+        /* Function Clear Error for Displayed Error */
         public function clearError() {
             unset($_COOKIE['error']);
             setcookie("error", "", time()-3600, "/");
