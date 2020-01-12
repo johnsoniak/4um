@@ -80,6 +80,13 @@ namespace {
             }
 
 
+            // Rank data
+            $ranks = $this->mysql->get($this->prefix."ranks");
+            foreach ($ranks as $rank) {
+                $this->rank[$rank["id"]] = $rank;
+            }
+
+
             // Ładujemy system szablonów
             require 'files/smarty/Smarty.class.php';
             $this->smarty = new Smarty;

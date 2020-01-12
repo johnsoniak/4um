@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-11 22:49:49
+/* Smarty version 3.1.34-dev-7, created on 2020-01-12 19:54:26
   from 'E:\www\4um\server_global\public_html\templates\default\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1a510d788215_39112554',
+  'unifunc' => 'content_5e1b7972e215e0_19391503',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c312919fac5afb73bd0aecc861b69cabb0a3596' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\templates\\default\\footer.tpl',
-      1 => 1578782984,
+      1 => 1578858852,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:container.stop.tpl' => 1,
   ),
 ),false)) {
-function content_5e1a510d788215_39112554 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1b7972e215e0_19391503 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:container.stop.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <footer class="footer">
@@ -35,7 +35,9 @@ $_smarty_tpl->_subTemplateRender("file:container.stop.tpl", $_smarty_tpl->cache_
 							
 							<p><span class="glyphicon glyphicon-stats" aria-hidden="true"></span><font style="font-size:17px;"> Posiadamy <?php echo $_smarty_tpl->tpl_vars['user']->value->allUsers;?>
  zarejestrowanych użytkowników. Ostatnio zarejestrował się <a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
-/profile/" style="color:#000!important"><?php echo $_smarty_tpl->tpl_vars['user']->value->lastUser;?>
+/profile/<?php echo $_smarty_tpl->tpl_vars['user']->value->lastUser["username"];?>
+" style="color:<?php echo $_smarty_tpl->tpl_vars['engine']->value->rank[$_smarty_tpl->tpl_vars['user']->value->lastUser["rank"]]["color"];?>
+!important"><?php echo $_smarty_tpl->tpl_vars['user']->value->lastUser["username"];?>
 </a>.</font></p>
 							<p style="line-height:10px;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><font style="font-size:17px;"> Użytkownicy aktywni przez ostatnie 5 minut:</font></p>
 								

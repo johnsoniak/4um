@@ -14,9 +14,10 @@ namespace {
         /* Information of rank */
         public $rank;
 
+        /* Username logged user */
         public $username;
 
-
+        /* Information of users on Forum */
         public $allUsers;
         public $lastUser;
 
@@ -36,10 +37,10 @@ namespace {
                 $this->sid = $_COOKIE[$engine->name];
             }
             $engine->mysql->get($engine->prefix."accounts", "username, count(*) as cnt");
-            $stats = $engine->mysql->getLastQuery();
+            $stats = $engine->mysql->rawQueryOne("SELECT `username`, `rank`, (SELECT COUNT(`id`) FROM `".$engine->prefix."accounts`) as `cnt` FROM `".$engine->prefix."accounts` WHERE `id` = (SELECT MAX(id) FROM `".$engine->prefix."accounts`)");
             $this->allUsers = $stats["cnt"];
-            $this->lastUser = $stats["username"];
-            
+            $this->lastUser = $stats;
+
             $engine->smarty->assign("user", $this);
             $this->createSession();
             if ($this->id > 0) {
