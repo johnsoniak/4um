@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-10 19:12:30
+/* Smarty version 3.1.34-dev-7, created on 2020-01-13 00:44:34
   from 'E:\www\4um\server_global\public_html\templates\default\menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e18cc9e762d09_58003013',
+  'unifunc' => 'content_5e1bbd723f2cb7_43073847',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '924e384fd949374841c4993170f4a2158588fbd0' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\templates\\default\\menu.tpl',
-      1 => 1578683544,
+      1 => 1578876255,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:container.start.tpl' => 1,
   ),
 ),false)) {
-function content_5e18cc9e762d09_58003013 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1bbd723f2cb7_43073847 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="motopress-main" class="main-holder">
  
 		<header class="motopress-wrapper header"> 
@@ -47,6 +47,10 @@ function content_5e18cc9e762d09_58003013 (Smarty_Internal_Template $_smarty_tpl)
 /settigns">Ustawienia</a></li>
 												<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
 /messages">Wiadomości</a></li>
+												<?php if ($_smarty_tpl->tpl_vars['engine']->value->rank[$_smarty_tpl->tpl_vars['user']->value->rank]["admin"]) {?>
+													<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin">Panel zarządzania</a></li>
+												<?php }?>
 												<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
 /action/logout/">Wyloguj</a></li>
 												<?php }?>

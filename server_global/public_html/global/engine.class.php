@@ -84,6 +84,7 @@ namespace {
             $ranks = $this->mysql->get($this->prefix."ranks");
             foreach ($ranks as $rank) {
                 $this->rank[$rank["id"]] = $rank;
+                $this->rank[$rank["id"]]["admin"] = $rank["addUser"];
             }
 
 
@@ -105,7 +106,8 @@ namespace {
             }
             
             // Rozruch funkcji
-            $this->getTemplateStyle();
+            if (strpos($this->location, 'admin/') == false) 
+                $this->getTemplateStyle();
 
             // Przenoszenie danych do szablonu
             $this->smarty->assign("engine", $this);
