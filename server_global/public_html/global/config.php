@@ -5,6 +5,7 @@ $config = (object) array(
     'DBname' => "4um_global",
     'DBhost' => "localhost",
     'template' => "default",
+    'adminTemplate' => "default",
     'sitename' => "4um Engine",
     "ReplyMail" => "kontakt@oxi-jon.pl"
 );

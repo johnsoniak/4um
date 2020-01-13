@@ -91,11 +91,21 @@ namespace {
             // Ładujemy system szablonów
             require 'files/smarty/Smarty.class.php';
             $this->smarty = new Smarty;
-            $this->smarty->setTemplateDir('./templates/'.$config->template)
-                ->setCompileDir('./templates_c')
-                ->setCacheDir('./cache');
+            if (strpos($this->location, 'admin/') == false) {
+                $this->smarty->setTemplateDir('./templates/'.$config->template)
+                    ->setCompileDir('./templates_c')
+                    ->setCacheDir('./cache');
+                $this->smarty->assign("template", $this->domain.'/templates/'.$config->template);
+            } else {
+                $this->smarty->setTemplateDir('./templates/'.$config->adminTemplate)
+                    ->setCompileDir('./templates_c')
+                    ->setCacheDir('./cache');
+                $this->smarty->assign("template", $this->domain.'/admin/templates/'.$config->adminTemplate);
+            } 
+                
 
-            $this->smarty->assign("template", $this->domain.'/templates/'.$config->template);
+
+            
             
             
             if (!$this->mysql) {

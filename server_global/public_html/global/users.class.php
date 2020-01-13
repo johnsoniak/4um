@@ -32,7 +32,7 @@ namespace {
             // COOOKIE
             if (false == array_key_exists($engine->name, $_COOKIE)) {
                 $this->sid = sha1(rand(0,9999)+time());
-                setcookie($engine->name, $this->sid, time()+(60*60)); // godzina
+                setcookie($engine->name, $this->sid, time()+(60*60), "/"); // godzina
             } else {
                 $this->sid = $_COOKIE[$engine->name];
             }
