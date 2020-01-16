@@ -9,7 +9,7 @@
             <ul class="recent-posts extrarecentpost_1 unstyled">
                 <li style="text-align:center" class="recent-posts_li post-75 post type-post status-publish format-standard has-post-thumbnail hentry category-semp-ertet-laciniate category-uam-leo-ut-tellus-dolor-dapibus category-uncategorized cat-39-id cat-37-id cat-1-id  list-item-0 clearfix">
                     <figure style="margin: 0 auto; position: relative; width: 100%;" class="thumbnail featured-thumbnail">
-                        <center><img style="width:169px" src="{if $profile.avatar|count_characters}{$engine->domain}/{$profile.avatar}{else}{$engine->domain}/images/avatar.png{/if}" alt="Avatar {$profile.username}">
+                        <center><img style="width:169px" src="{if $profile.avatar|count_characters}{$profile.avatar}{else}{$engine->domain}/images/avatar.png{/if}" alt="Avatar {$profile.username}">
                         
                         </center>
                     
@@ -38,7 +38,7 @@
                 <h3 class="title">Podpis</h3>
                 <p class="excerpt">
                     {if $profile.signature|count_characters}
-                        {$bbcode->toHTML($dataProfil.signature)}
+                        {$bbcode->toHTML($profile.signature)}
                     {else}
                         Brak podpisu
                     {/if}

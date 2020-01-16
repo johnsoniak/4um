@@ -1,30 +1,33 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-16 01:15:34
+/* Smarty version 3.1.34-dev-7, created on 2020-01-16 02:29:19
   from 'E:\www\4um\server_global\public_html\templates\default\settings.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1fb9368dd070_01221240',
+  'unifunc' => 'content_5e1fca7fbd23d3_08715299',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5290a3c7f771fc2024e9ad5927da5c4befba6b37' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\templates\\default\\settings.tpl',
-      1 => 1579137331,
+      1 => 1579141749,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_5e1fb9368dd070_01221240 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1fca7fbd23d3_08715299 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
 	<div class="span12 ">
 		<div id="id-26220569" class="accordion">
 			<div class="accordion-group">
+                <?php $_smarty_tpl->_subTemplateRender("file:error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 				<div class="accordion-heading">
 					<a class="accordion-toggle active" data-toggle="collapse" data-parent="#id-26220569" href="#change-password">
 						<em><i class="icon-unlock"></i></em>Zmiana hasła
@@ -66,7 +69,6 @@ function content_5e1fb9368dd070_01221240 (Smarty_Internal_Template $_smarty_tpl)
 					<div class="accordion-inner">
 						<form action="settings.php" method="POST" ENCTYPE="multipart/form-data">
 							<input type="hidden" name="change-avatar" value="true">
-							<input type="hidden" name="MAX_FILE_SIZE" value="50000" />
 							
 							<div class="form-group">
 								<input id="uploadFile" class="form-control input-txt" placeholder="Nie wybrano jeszcze pliku" disabled="disabled" />
@@ -74,7 +76,7 @@ function content_5e1fb9368dd070_01221240 (Smarty_Internal_Template $_smarty_tpl)
 							
 							<div class="fileUpload btn btn-primary">
 								<span id="spanUpload" onclick="upload(); return false">Wybierz plik</span>
-								<input id="uploadBtn" type="file" name="plik" class="upload" onchange="showFile(this.value)" />
+								<input id="uploadBtn" type="file" name="avatar" class="upload" onchange="showFile(this.value)" multiple="multiple" />
 							</div>
 							<button type="submit" id="login-button" style="margin-top:10px;" class="btn btn-primary">Zmień Avatar</button>
                             <?php echo '<script'; ?>

@@ -2,6 +2,7 @@
 	<div class="span12 ">
 		<div id="id-26220569" class="accordion">
 			<div class="accordion-group">
+                {include file="error.tpl"}
 				<div class="accordion-heading">
 					<a class="accordion-toggle active" data-toggle="collapse" data-parent="#id-26220569" href="#change-password">
 						<em><i class="icon-unlock"></i></em>Zmiana hasła
@@ -43,7 +44,6 @@
 					<div class="accordion-inner">
 						<form action="settings.php" method="POST" ENCTYPE="multipart/form-data">
 							<input type="hidden" name="change-avatar" value="true">
-							<input type="hidden" name="MAX_FILE_SIZE" value="50000" />
 							
 							<div class="form-group">
 								<input id="uploadFile" class="form-control input-txt" placeholder="Nie wybrano jeszcze pliku" disabled="disabled" />
@@ -51,7 +51,7 @@
 							
 							<div class="fileUpload btn btn-primary">
 								<span id="spanUpload" onclick="upload(); return false">Wybierz plik</span>
-								<input id="uploadBtn" type="file" name="plik" class="upload" onchange="showFile(this.value)" />
+								<input id="uploadBtn" type="file" name="avatar" class="upload" onchange="showFile(this.value)" multiple="multiple" />
 							</div>
 							<button type="submit" id="login-button" style="margin-top:10px;" class="btn btn-primary">Zmień Avatar</button>
                             <script type="text/javascript">

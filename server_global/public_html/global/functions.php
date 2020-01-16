@@ -47,7 +47,7 @@ function resize($newWidth, $targetFile, $originalFile) {
     if (file_exists($targetFile)) {
             unlink($targetFile);
     }
-    $image_save_func($tmp, "upload/avatar/$targetFile.$new_image_ext");
+    $image_save_func($tmp, "../upload/avatar/$targetFile.$new_image_ext");
 	return true;
 }
 

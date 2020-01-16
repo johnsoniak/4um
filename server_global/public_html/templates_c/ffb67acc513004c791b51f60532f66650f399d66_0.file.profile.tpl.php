@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-12 23:13:43
+/* Smarty version 3.1.34-dev-7, created on 2020-01-16 02:45:38
   from 'E:\www\4um\server_global\public_html\templates\default\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1ba827343751_28786779',
+  'unifunc' => 'content_5e1fce52eb52c6_57689607',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ffb67acc513004c791b51f60532f66650f399d66' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\templates\\default\\profile.tpl',
-      1 => 1578870818,
+      1 => 1579142724,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:breadcrumb.tpl' => 1,
   ),
 ),false)) {
-function content_5e1ba827343751_28786779 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1fce52eb52c6_57689607 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row ">
     
 	<div class="span12 ">
@@ -35,8 +35,7 @@ function content_5e1ba827343751_28786779 (Smarty_Internal_Template $_smarty_tpl)
                 <li style="text-align:center" class="recent-posts_li post-75 post type-post status-publish format-standard has-post-thumbnail hentry category-semp-ertet-laciniate category-uam-leo-ut-tellus-dolor-dapibus category-uncategorized cat-39-id cat-37-id cat-1-id  list-item-0 clearfix">
                     <figure style="margin: 0 auto; position: relative; width: 100%;" class="thumbnail featured-thumbnail">
                         <center><img style="width:169px" src="<?php if (preg_match_all('/[^\s]/u',$_smarty_tpl->tpl_vars['profile']->value['avatar'], $tmp)) {
-echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
-/<?php echo $_smarty_tpl->tpl_vars['profile']->value['avatar'];
+echo $_smarty_tpl->tpl_vars['profile']->value['avatar'];
 } else {
 echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
 /images/avatar.png<?php }?>" alt="Avatar <?php echo $_smarty_tpl->tpl_vars['profile']->value['username'];?>
@@ -73,7 +72,7 @@ echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
                 <h3 class="title">Podpis</h3>
                 <p class="excerpt">
                     <?php if (preg_match_all('/[^\s]/u',$_smarty_tpl->tpl_vars['profile']->value['signature'], $tmp)) {?>
-                        <?php echo $_smarty_tpl->tpl_vars['bbcode']->value->toHTML($_smarty_tpl->tpl_vars['dataProfil']->value['signature']);?>
+                        <?php echo $_smarty_tpl->tpl_vars['bbcode']->value->toHTML($_smarty_tpl->tpl_vars['profile']->value['signature']);?>
 
                     <?php } else { ?>
                         Brak podpisu

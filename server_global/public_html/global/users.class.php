@@ -264,6 +264,18 @@ namespace {
             }
         }
 
+        /* Function for update user avatar */
+        public function setUserAvatar($url, $id) {
+            global $engine;
+            $engine->mysql->where("id", $id);
+            if ($engine->mysql->update($engine->prefix."accounts", array("avatar" => $url))) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
         protected function getUserBrowser($user_agent) {
             if (strpos($user_agent, 'Opera') || strpos($user_agent, 'OPR/')) return 'Opera';
             elseif (strpos($user_agent, 'Edge')) return 'Edge';
