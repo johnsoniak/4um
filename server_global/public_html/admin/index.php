@@ -15,24 +15,50 @@ $engine->smarty->clearCache("header.tpl");
 $profile = $user->getUserData($user->id);
 $engine->smarty->assign("profile", $profile);
 
-function get_url_contents($url) {
-
+function get_url_photo($url) {
+    $re = '/(alt|href|src)=("[^"]*")/'; 
     $html = file_get_contents($url);
-    preg_match_all( '/< *img[^>]*src *= *["\']?([^"\']*)/i',$html, $matches ); 
+    preg_match_all($re, $html, $matches); 
     return $matches;
 }
 
-$photo = get_url_contents('http://pixabay.com/images/search/%C5%9Bwiat/');
+function getPhoto($url) {
+    $html = file_get_contents($url);
+    preg_match('/< *img[^>]*src *= *["\']?([^"\']*)/i', $html, $matches);
+    return $matches;
+}
+//'http://pixabay.com/images/search/%C5%9Bwiat/'
 
+$keywords = array("London", "Malta", "Afryka", "Dubaj", "Koty", "Psy", "Miasto", "Samochód", "Ludzie");
+$photo["category"] = $keywords[rand(0,8)];
+function imageSearch ($world="", $category="") {
+    if (strlen($world) > 0) {
+        $number = 84;
+        $link = $world."/";
+    } else {
+        $number = 72;
+        $link = "";
+    }
+    if (strlen($category) > 0) {
+        $link2 = "?cat=".$category;
+    } else {
+        $link2 = "";
+    }
 
-/*
-foreach ($data->responseData->results as $result) {
-    $results[] = array('url' => $result->url, 'alt' => $result->title);
+    $url = "http://pixabay.com/photos/search/".$link."".$link2;
+    $url = get_url_photo($url);
+   
+    return substr($url[0][$number], 6, -1);;
 }
 
-print_r($results);
-*/
-$engine->smarty->assign("photo", $photo[1][0]);
+//$url = "http://pixabay.com/photos/search/london/?cat=people";
+$url = imageSearch($photo["category"]);
+//print_r($url);
+//$url = substr($url[0][72], 6, -1); 
+$photo['image'] = get_url_photo("http://pixabay.com".$url);
+$photo["image"] = substr($photo["image"][0][57], 5, -1);
+
+$engine->smarty->assign("photo", $photo);
 $engine->addDisplay("login.tpl");
 $engine->display();
 

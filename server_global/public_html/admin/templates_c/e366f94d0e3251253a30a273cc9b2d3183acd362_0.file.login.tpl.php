@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-16 06:39:03
+/* Smarty version 3.1.34-dev-7, created on 2020-01-16 08:21:52
   from 'E:\www\4um\server_global\public_html\admin\templates\def\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e20050716bf17_45199873',
+  'unifunc' => 'content_5e201d20441f45_03122822',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e366f94d0e3251253a30a273cc9b2d3183acd362' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\def\\login.tpl',
-      1 => 1579156736,
+      1 => 1579162908,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e20050716bf17_45199873 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e201d20441f45_03122822 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="app">
     <section class="section">
       <div class="d-flex flex-wrap align-items-stretch">
@@ -68,15 +68,18 @@ function content_5e20050716bf17_45199873 (Smarty_Internal_Template $_smarty_tpl)
             </div>
           </div>
         </div>
-        <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="<?php echo $_smarty_tpl->tpl_vars['photo']->value;?>
+        <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" style="background-size: 959px 942px;" data-background="<?php echo $_smarty_tpl->tpl_vars['photo']->value['image'];?>
 ">
           <div class="absolute-bottom-left index-2">
             <div class="text-light p-5 pb-2">
               <div class="mb-5 pb-3">
                 <h1 class="mb-2 display-4 font-weight-bold">Dzień dobry</h1>
-                <h5 class="font-weight-normal text-muted-transparent">Bali, Indonesia</h5>
+                <h5 class="font-weight-normal text-muted-transparent">Zdjęcie z kategorii: <?php echo $_smarty_tpl->tpl_vars['photo']->value['category'];?>
+</h5>
               </div>
-              Photo by <a class="text-light bb" target="_blank" href="https://unsplash.com/photos/a8lTjWJJgLA">Justin Kauffman</a> on <a class="text-light bb" target="_blank" href="https://unsplash.com">Unsplash</a>
+              Fotografia pobrana przez <a class="text-light bb" href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+"><?php echo $_smarty_tpl->tpl_vars['engine']->value->sitename;?>
+</a>
             </div>
           </div>
         </div>
