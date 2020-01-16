@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-16 03:14:50
+/* Smarty version 3.1.34-dev-7, created on 2020-01-16 08:39:12
   from 'E:\www\4um\server_global\public_html\admin\templates\default\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1fd52a240326_61032286',
+  'unifunc' => 'content_5e202130f13082_07460992',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1788eb456c9a681b7a4e17817ff90503995c767c' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\footer.tpl',
-      1 => 1579127584,
+      1 => 1579150279,
       2 => 'file',
     ),
   ),
@@ -20,16 +20,41 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1fd52a240326_61032286 (Smarty_Internal_Template $_smarty_tpl) {
-echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
-/coreui/dist/umd/popper.min.js"><?php echo '</script'; ?>
+function content_5e202130f13082_07460992 (Smarty_Internal_Template $_smarty_tpl) {
+?>  <!-- General JS Scripts -->
+  <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"><?php echo '</script'; ?>
 >
-<?php echo '<script'; ?>
+  <?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
-/coreui/dist/js/coreui.bundle.min.js"><?php echo '</script'; ?>
+/assets/js/stisla.js"><?php echo '</script'; ?>
 >
 
+  <!-- JS Libraies -->
+
+  <!-- Template JS File -->
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/js/scripts.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/js/custom.js"><?php echo '</script'; ?>
+>
+
+  <!-- Page Specific JS File -->
 </body>
 </html><?php }
 }

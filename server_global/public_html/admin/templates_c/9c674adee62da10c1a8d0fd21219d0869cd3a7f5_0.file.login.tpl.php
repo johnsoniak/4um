@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-16 03:14:50
+/* Smarty version 3.1.34-dev-7, created on 2020-01-16 08:39:12
   from 'E:\www\4um\server_global\public_html\admin\templates\default\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1fd52a0abf26_01760150',
+  'unifunc' => 'content_5e202130c218d2_68697684',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9c674adee62da10c1a8d0fd21219d0869cd3a7f5' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\login.tpl',
-      1 => 1579130238,
+      1 => 1579162908,
       2 => 'file',
     ),
   ),
@@ -20,55 +20,70 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1fd52a0abf26_01760150 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="card-group">
-        <div class="card p-4">
-          <div class="card-body">
-            <h1>Panel Administratora</h1>
-            <p class="text-muted">Wymagane jest ponowne logowanie</p>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"> 
-                    <i class="icofont-ui-user"></i>
-                </span>
+function content_5e202130c218d2_68697684 (Smarty_Internal_Template $_smarty_tpl) {
+?><div id="app">
+    <section class="section">
+      <div class="d-flex flex-wrap align-items-stretch">
+        <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
+          <div class="p-4 m-3">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['profile']->value['avatar'];?>
+" alt="Avatar <?php echo $_smarty_tpl->tpl_vars['profile']->value['username'];?>
+" style="width: 160px; display: block; margin-left: auto;    margin-right: auto;" class="shadow-light rounded-circle mb-5 mt-2">
+            <h4 class="text-dark font-weight-normal">Witaj <span class="font-weight-bold"><?php echo $_smarty_tpl->tpl_vars['profile']->value['username'];?>
+</span></h4>
+            <p class="text-muted">Aby przejść do panelu administratora musisz ponownie wpisać swoje hasło.</p>
+            <form method="POST" action="#" class="needs-validation" novalidate="">
+              
+              <div class="form-group">
+                <div class="d-block">
+                  <label for="password" class="control-label">Hasło</label>
+                </div>
+                <input id="password" type="password" class="form-control" placeholder="Wpisz swoje hasło" name="password" tabindex="2" required>
               </div>
-              <input class="form-control" type="text" value="<?php echo $_smarty_tpl->tpl_vars['user']->value->username;?>
-" disabled>
-            </div>
-            <div class="input-group mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="icofont-ui-password"></i>
-                </span>
+
+              <div class="form-group text-right">
+                <a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+" class="float-left mt-3">
+                  Powrót na stronę | <?php echo $_smarty_tpl->tpl_vars['engine']->value->sitename;?>
+
+                </a>
+                <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
+                  Zaloguj
+                </button>
               </div>
-              <input class="form-control" type="password" placeholder="Password">
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <button class="btn btn-primary px-4" type="button">Zaloguj</button>
-              </div>
-              <div class="col-6 text-right">
-                <button class="btn btn-link px-0" type="button">Powrót na stronę</button>
+
+              
+            </form>
+
+            <div class="text-center mt-5 text-small">
+              Copyright &copy; <?php echo $_smarty_tpl->tpl_vars['engine']->value->sitename;?>
+. Strona używa <?php echo $_smarty_tpl->tpl_vars['engine']->value->sitename;?>
+ w wersji <?php echo $_smarty_tpl->tpl_vars['engine']->value->version;?>
+
+              <div class="mt-2">
+                <a href="#">Privacy Policy</a>
+                <div class="bullet"></div>
+                <a href="#">Terms of Service</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="card text-white bg-primary py-5 d-md-down-none" style="width: 44%; background: url(http://4um.pl/images/avatar.png);
-    background-position: center top;
-    background-size: 100% 100%;">
-          <div class="card-body text-center">
-            <div>
-              <h2 style="text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000;
-    color: #fff;font-size: 35px;"><?php echo $_smarty_tpl->tpl_vars['user']->value->username;?>
-</h2>
+        <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" style="background-size: 959px 942px;" data-background="<?php echo $_smarty_tpl->tpl_vars['photo']->value['image'];?>
+">
+          <div class="absolute-bottom-left index-2">
+            <div class="text-light p-5 pb-2">
+              <div class="mb-5 pb-3">
+                <h1 class="mb-2 display-4 font-weight-bold">Dzień dobry</h1>
+                <h5 class="font-weight-normal text-muted-transparent">Zdjęcie z kategorii: <?php echo $_smarty_tpl->tpl_vars['photo']->value['category'];?>
+</h5>
+              </div>
+              Fotografia pobrana przez <a class="text-light bb" href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+"><?php echo $_smarty_tpl->tpl_vars['engine']->value->sitename;?>
+</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div><?php }
+    </section>
+  </div><?php }
 }

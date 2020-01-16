@@ -29,8 +29,8 @@ function getPhoto($url) {
 }
 //'http://pixabay.com/images/search/%C5%9Bwiat/'
 
-$keywords = array("London", "Malta", "Afryka", "Dubaj", "Koty", "Psy", "Miasto", "Samochód", "Ludzie");
-$photo["category"] = $keywords[rand(0,8)];
+$keywords = array("London", "Malta", "Afryka", "Dubaj", "Cat", "Psy", "Miasto", "Cars", "People", "Mallorca");
+$photo["category"] = $keywords[rand(0,9)];
 function imageSearch ($world="", $category="") {
     if (strlen($world) > 0) {
         $number = 84;
@@ -58,6 +58,12 @@ $url = imageSearch($photo["category"]);
 $photo['image'] = get_url_photo("http://pixabay.com".$url);
 $photo["image"] = substr($photo["image"][0][57], 5, -1);
 
+if ($engine->rank[$user->rank]["admin"] == 0)
+    header("Location: ".$engine->domain);
+
+
+    
+$engine->title = "Logowanie";
 $engine->smarty->assign("photo", $photo);
 $engine->addDisplay("login.tpl");
 $engine->display();
