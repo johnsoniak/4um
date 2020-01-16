@@ -65,6 +65,8 @@ namespace {
             $this->domain = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://".$_SERVER['HTTP_HOST'];
             $this->location = (isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : "");
 
+            $this->version = "0.0.1 alpha";
+
             // Połączenie z bazą danych
             require_once('MysqliDb.php');
             $this->mysql = new MysqliDb($config->DBhost, $config->DBuser, $config->DBpass, $config->DBname);

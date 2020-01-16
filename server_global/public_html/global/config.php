@@ -5,8 +5,9 @@ $config = (object) array(
     'DBname' => "4um_global",
     'DBhost' => "localhost",
     'template' => "default",
-    'adminTemplate' => "default",
+    'adminTemplate' => "def",
     'sitename' => "4um Engine",
+    "timeSession" => 60, // Minuty
     "ReplyMail" => "kontakt@oxi-jon.pl"
 );
 ?>

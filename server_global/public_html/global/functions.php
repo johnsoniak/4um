@@ -8,6 +8,8 @@ function checkInput($data) {
     return $data;
 }
 
+
+
 /* Function Resizing Image */
 function resize($newWidth, $targetFile, $originalFile) {
     $info = getimagesize($originalFile);

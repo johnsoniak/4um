@@ -25,16 +25,17 @@ namespace {
         protected $browser;
 
         public function __construct() {
-            global $engine;
+            global $engine, $config;
             // useragent
             $this->browser = $this->getUserBrowser($_SERVER['HTTP_USER_AGENT']);
             
             // COOOKIE
             if (false == array_key_exists($engine->name, $_COOKIE)) {
                 $this->sid = sha1(rand(0,9999)+time());
-                setcookie($engine->name, $this->sid, time()+(60*60), "/"); // godzina
+                setcookie($engine->name, $this->sid, time()+(60*$config->timeSession), "/"); // godzina
             } else {
                 $this->sid = $_COOKIE[$engine->name];
+                setcookie($engine->name, $this->sid, time()+(60*$config->timeSession), "/");
             }
             $engine->mysql->get($engine->prefix."accounts", "username, count(*) as cnt");
             $stats = $engine->mysql->rawQueryOne("SELECT `username`, `rank`, (SELECT COUNT(`id`) FROM `".$engine->prefix."accounts`) as `cnt` FROM `".$engine->prefix."accounts` WHERE `id` = (SELECT MAX(id) FROM `".$engine->prefix."accounts`)");
@@ -274,6 +275,12 @@ namespace {
                 return false;
             }
 
+        }
+
+        public function getUserData($id) {
+            global $engine;
+            $engine->mysql->where("id", $id);
+            return $engine->mysql->getOne($engine->prefix."accounts");
         }
 
         protected function getUserBrowser($user_agent) {
