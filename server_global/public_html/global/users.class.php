@@ -17,6 +17,9 @@ namespace {
         /* Username logged user */
         public $username;
 
+        /* User is logged as admin */
+        public $admin;
+
         /* Information of users on Forum */
         public $allUsers;
         public $lastUser;
@@ -124,6 +127,8 @@ namespace {
             $s = $engine->mysql->get($engine->prefix.'sessions');
             if (isset($s[0]["uid"]) && $s[0]["uid"] > 0)
                $this->id = $s[0]["uid"];
+            if (isset($s[0]["admin"]) && $s[0]["admin"] > 0)
+                $this->admin = $s[0]["admin"];
             if ($engine->mysql->count == 0) {
                 // tworzenie sesji
                 $data = array(
@@ -146,6 +151,31 @@ namespace {
                 $engine->mysql->where("sid", $_COOKIE[$engine->name]);
                 $engine->mysql->update($engine->prefix."sessions", $data);
             }
+        }
+
+        /* Function to loged admin */
+        public function loginAsAdmin($password) {
+            global $engine;
+
+             $engine->mysql->where ("id", $this->id);
+             $data = $engine->mysql->getOne ($engine->prefix.'accounts');
+             
+             $pass = $this->hashPassword($password, $data['usercode']);
+             if (isset($data['password']) && $data["password"] == $pass){
+                if ($engine->rank[$this->rank]]["admin"] > 0) {
+                    $engine->mysql->where("id", $this->id);
+                    $engine->mysql->update($engine->prefix."sessions", array("admin" => 1));
+                    if ($engine->mysql->count > 0) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return false;
+                }
+             } else {
+                 return false;
+             }
         }
 
         /* Function checking User name has been register */
