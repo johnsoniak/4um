@@ -1,34 +1,48 @@
-<div class="login-box">
-  <div class="login-logo">
-    <a href="#"><b>{$engine->sitename}</b> Panel Zarządzania</a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="login-box-body">
-    <p class="login-box-msg">Logowanie do panelu Zarządzania</p>
-
-    <form action="#" method="post">
-      <div class="form-group has-feedback">
-        <input type="username" value="{$user->username}" class="form-control" disabled>
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Hasło">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="row">
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Zaloguj</button>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card-group">
+        <div class="card p-4">
+          <div class="card-body">
+            <h1>Panel Administratora</h1>
+            <p class="text-muted">Wymagane jest ponowne logowanie</p>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> 
+                    <i class="icofont-ui-user"></i>
+                </span>
+              </div>
+              <input class="form-control" type="text" value="{$user->username}" disabled>
+            </div>
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="icofont-ui-password"></i>
+                </span>
+              </div>
+              <input class="form-control" type="password" placeholder="Password">
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <button class="btn btn-primary px-4" type="button">Zaloguj</button>
+              </div>
+              <div class="col-6 text-right">
+                <button class="btn btn-link px-0" type="button">Powrót na stronę</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.col -->
+        <div class="card text-white bg-primary py-5 d-md-down-none" style="width: 44%; background: url(http://4um.pl/images/avatar.png);
+    background-position: center top;
+    background-size: 100% 100%;">
+          <div class="card-body text-center">
+            <div>
+              <h2 style="text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000;
+    color: #fff;font-size: 35px;">{$user->username}</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </form>
-    <!-- /.social-auth-links -->
-
-    <a href="#">I forgot my password</a><br>
-    <a href="register.html" class="text-center">Register a new membership</a>
-
+    </div>
   </div>
-  <!-- /.login-box-body -->
 </div>
-<!-- /.login-box -->

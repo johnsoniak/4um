@@ -3062,3 +3062,14 @@ div[class].topic-actions {
 }
 
 
+/* Upload photo form */
+.fileUpload > input{
+	height: 0;
+	width: 0;
+	opacity: 0;
+	cursor: pointer;
+  }
+  
+  .fileUpload {
+	margin-top: 10px;
+  }

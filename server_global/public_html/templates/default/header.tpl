@@ -40,24 +40,6 @@
 	});
 </script>
 <!--<![endif]-->
-<script>
-  	$(document).on("ready", function() {
-		var i = 1;
-		hrv_backgroundMove(7500000, 100000*i);
-		setInterval(function() {
-			i++;
-			hrv_backgroundMove(7500000, 100000*i);
-		}, 7500000);
-	});
-
-	function hrv_backgroundMove(time, distance) {
-		$('header').animate({
-			'background-position-x': distance+'px',
-		}, time, 'linear');
-      	return true;
-	}
- 
-</script> 
 {/literal}
 </head>
 <body class="home page page-id-203 page-template page-template-page-home page-template-page-home-php">

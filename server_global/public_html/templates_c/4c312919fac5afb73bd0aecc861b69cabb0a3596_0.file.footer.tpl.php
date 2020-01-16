@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-12 19:54:26
+/* Smarty version 3.1.34-dev-7, created on 2020-01-16 01:34:17
   from 'E:\www\4um\server_global\public_html\templates\default\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1b7972e215e0_19391503',
+  'unifunc' => 'content_5e1fbd99728459_26742735',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c312919fac5afb73bd0aecc861b69cabb0a3596' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\templates\\default\\footer.tpl',
-      1 => 1578858852,
+      1 => 1579138454,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:container.stop.tpl' => 1,
   ),
 ),false)) {
-function content_5e1b7972e215e0_19391503 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1fbd99728459_26742735 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:container.stop.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <footer class="footer">
@@ -50,7 +50,8 @@ $_smarty_tpl->_subTemplateRender("file:container.stop.tpl", $_smarty_tpl->cache_
 				<div class="row">
 					<div class="span9"> 
 						<div id="footer-text" style="margin: 32px 0 26px 0px;" class="footer-text"> <?php echo $_smarty_tpl->tpl_vars['engine']->value->sitename;?>
-  © 2015 <span class="linetxt">|</span> <a href="#" title="Privacy Policy">Regulamin strony</a> </div>
+  © 2015 - <?php echo date('Y');?>
+ <span class="linetxt">|</span> <a href="#" title="Privacy Policy">Regulamin strony</a> </div>
 					</div>
 					<div class="span3">
 						<div class="social-nets-wrapper">
@@ -249,12 +250,6 @@ $_smarty_tpl->_subTemplateRender("file:container.stop.tpl", $_smarty_tpl->cache_
 <!-- Scripts -->
 
 
-
-<?php echo '<script'; ?>
- type="text/javascript">
-				deleteCookie('cf-cookie-banner');
-			<?php echo '</script'; ?>
->
  
 	<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
 /plugins/SCEditor/minified/themes/default.min.css" type="text/css" media="all" />

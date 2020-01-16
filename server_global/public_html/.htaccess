@@ -10,4 +10,5 @@
 	RewriteRule ^profile/([a-zA-Z0-9]+)/$ index.php?action=profile&username=$1
 	RewriteRule ^profile/([a-zA-Z0-9]+)$ index.php?action=profile&username=$1
 	RewriteRule ^404$ index.php?action=404
+	RewriteRule ^settings$ index.php?action=settings
 </IfModule>

@@ -147,7 +147,7 @@ namespace {
             }
         }
 
-
+        /* Function checking User name has been register */
         function checkUsername($username) {
             global $engine;
             $engine->mysql->where ("username", $username);
@@ -155,6 +155,7 @@ namespace {
             return $data['id'];
         }
 
+        /* Function checking User Email has been register */
         function checkEmail($email) {
             global $engine;
             $engine->mysql->where ("email", $email);
@@ -162,6 +163,7 @@ namespace {
             return $data['id'];
         }
 
+        /* Function add user to database */
         public function createUser($username, $email, $password) {
             global $engine;
             if ($this->checkUsername($username) > 0) {

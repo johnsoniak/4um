@@ -7,9 +7,9 @@ $engine = new Engine();
 $user = new Users();
 
 if ($engine->rank[$user->rank]["admin"] == 0)
-    header("location:".$engine->domain);
+    header("Location:".$engine->domain);
 
-$engine->smarty->clearCache('index.tpl');
+$engine->smarty->clearCache("header.tpl");
 
 $engine->addDisplay("login.tpl");
 $engine->display();

@@ -19,7 +19,7 @@
 				</div>
 				<div class="row">
 					<div class="span9"> 
-						<div id="footer-text" style="margin: 32px 0 26px 0px;" class="footer-text"> {$engine->sitename}  © 2015 <span class="linetxt">|</span> <a href="#" title="Privacy Policy">Regulamin strony</a> </div>
+						<div id="footer-text" style="margin: 32px 0 26px 0px;" class="footer-text"> {$engine->sitename}  © 2015 - {date(Y)} <span class="linetxt">|</span> <a href="#" title="Privacy Policy">Regulamin strony</a> </div>
 					</div>
 					<div class="span3">
 						<div class="social-nets-wrapper">
@@ -136,10 +136,6 @@
 <!-- Scripts -->
 
 
-
-<script type="text/javascript">
-				deleteCookie('cf-cookie-banner');
-			</script>
  
 	<link rel="stylesheet" href="{$engine->domain}/plugins/SCEditor/minified/themes/default.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" type="text/css" media="all" href="{$template}/css/camera.css"/>

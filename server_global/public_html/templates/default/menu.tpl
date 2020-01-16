@@ -15,7 +15,7 @@
 												<li id="menu-item-1924" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1924"><a href="{$engine->domain}/action/register/">Zarejestruj</a></li>
 												{else}
 												<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="{$engine->domain}/profile/{$user->username}">Profil</a></li>
-												<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="{$engine->domain}/settigns">Ustawienia</a></li>
+												<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="{$engine->domain}/settings">Ustawienia</a></li>
 												<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="{$engine->domain}/messages">Wiadomości</a></li>
 												{if $engine->rank[$user->rank]["admin"]}
 													<li id="menu-item-1923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1923"><a href="{$engine->domain}/admin">Panel zarządzania</a></li>

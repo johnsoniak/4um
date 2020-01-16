@@ -71,6 +71,10 @@ switch ($action) {
     case "logout":
         $user->logoutUser();
         break;
+    case "settings":
+        $engine->addDisplay("settings.tpl");
+        $engine->display();
+        break;
     default:
         $engine->addDisplay("portal.tpl");
         $engine->display();

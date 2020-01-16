@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-09 21:21:56
+/* Smarty version 3.1.34-dev-7, created on 2020-01-16 00:52:27
   from 'E:\www\4um\server_global\public_html\templates\default\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e179974051499_57907299',
+  'unifunc' => 'content_5e1fb3cbe594e8_53724407',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1af5633bcfc3d7fe069ad2d8a922e8009575acfa' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\templates\\default\\header.tpl',
-      1 => 1578604912,
+      1 => 1579135944,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:menu.tpl' => 1,
   ),
 ),false)) {
-function content_5e179974051499_57907299 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e1fb3cbe594e8_53724407 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html lang="pl">
@@ -77,26 +77,6 @@ function content_5e179974051499_57907299 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '</script'; ?>
 >
 <!--<![endif]-->
-<?php echo '<script'; ?>
->
-  	$(document).on("ready", function() {
-		var i = 1;
-		hrv_backgroundMove(7500000, 100000*i);
-		setInterval(function() {
-			i++;
-			hrv_backgroundMove(7500000, 100000*i);
-		}, 7500000);
-	});
-
-	function hrv_backgroundMove(time, distance) {
-		$('header').animate({
-			'background-position-x': distance+'px',
-		}, time, 'linear');
-      	return true;
-	}
- 
-<?php echo '</script'; ?>
-> 
 
 </head>
 <body class="home page page-id-203 page-template page-template-page-home page-template-page-home-php">
