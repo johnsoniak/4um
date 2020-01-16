@@ -142,7 +142,7 @@ namespace {
                 );
 
                 if (!$engine->mysql->insert($engine->prefix."sessions", $data)) 
-                    $engine->syntex_error();
+                    $engine->error("error", "nie można zaktualizować sesji");
                 else
                     return true;
             } else {
@@ -162,7 +162,7 @@ namespace {
              
              $pass = $this->hashPassword($password, $data['usercode']);
              if (isset($data['password']) && $data["password"] == $pass){
-                if ($engine->rank[$this->rank]]["admin"] > 0) {
+                if ($engine->rank[$this->rank]["admin"] > 0) {
                     $engine->mysql->where("id", $this->id);
                     $engine->mysql->update($engine->prefix."sessions", array("admin" => 1));
                     if ($engine->mysql->count > 0) {

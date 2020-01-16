@@ -27,7 +27,7 @@ function getPhoto($url) {
     preg_match('/< *img[^>]*src *= *["\']?([^"\']*)/i', $html, $matches);
     return $matches;
 }
-//'http://pixabay.com/images/search/%C5%9Bwiat/'
+
 
 $keywords = array("London", "Malta", "Afryka", "Dubaj", "Cat", "Psy", "Miasto", "Cars", "People", "Mallorca");
 $photo["category"] = $keywords[rand(0,9)];
@@ -57,8 +57,9 @@ $url = imageSearch($photo["category"]);
 //$url = substr($url[0][72], 6, -1); 
 $photo['image'] = get_url_photo("http://pixabay.com".$url);
 $photo["image"] = substr($photo["image"][0][57], 5, -1);
-
-if ($engine->rank[$user->rank]["admin"] == 0)
+if (!isset($user->id) || $user->id == 0) 
+    header("Location: ".$engine->domain);
+elseif ($engine->rank[$user->rank]["admin"] == 0)
     header("Location: ".$engine->domain);
 
 
