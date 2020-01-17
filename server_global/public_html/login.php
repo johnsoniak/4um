@@ -8,7 +8,6 @@ require("global/users.class.php");
 $engine = new Engine();
 $user = new Users();
 
-$err = 0;
 /* Login user */
 if (isset($_POST['login'])) {
 	if ($user->id == 0) {

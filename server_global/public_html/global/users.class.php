@@ -154,28 +154,31 @@ namespace {
         }
 
         /* Function to loged admin */
-        public function loginAsAdmin($password) {
+        public function loginAdmin($password) {
             global $engine;
 
-             $engine->mysql->where ("id", $this->id);
-             $data = $engine->mysql->getOne ($engine->prefix.'accounts');
+            $engine->mysql->where ("id", $this->id);
+            $data = $engine->mysql->getOne ($engine->prefix.'accounts');
              
-             $pass = $this->hashPassword($password, $data['usercode']);
-             if (isset($data['password']) && $data["password"] == $pass){
+            $pass = $this->hashPassword($password, $data['usercode']);
+            if (isset($data['password']) && $data["password"] == $pass){
                 if ($engine->rank[$this->rank]["admin"] > 0) {
-                    $engine->mysql->where("id", $this->id);
+                    $engine->mysql->where("sid", $this->sid);
                     $engine->mysql->update($engine->prefix."sessions", array("admin" => 1));
                     if ($engine->mysql->count > 0) {
                         return true;
                     } else {
+                        $engine->error("danger", "Nie można zaktualizować rekordu.");
                         return false;
                     }
                 } else {
+                    $engine->error("danger", "Nie ma uprawnień do zalogowania.");
                     return false;
                 }
-             } else {
-                 return false;
-             }
+            } else {
+                $engine->error("danger", "Podano zły login lub hasło.");
+                return false;
+            }
         }
 
         /* Function checking User name has been register */

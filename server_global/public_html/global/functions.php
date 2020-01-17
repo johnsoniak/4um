@@ -53,4 +53,30 @@ function resize($newWidth, $targetFile, $originalFile) {
 	return true;
 }
 
+function randomImage($world) {
+        require 'files/simple_html_dom.php';
+        $url = "https://unsplash.com/s/photos/".$world;
+    
+        $html = file_get_html($url);
+    
+        // Find all images
+        $x = 0;
+        foreach($html->find('a') as $element){
+            if ($element->class == "_2Mc8_") {  
+                $x++;
+                $photoUrl[$x] = $element->href;
+            }
+        }
+    
+        $openPhoto = $photoUrl[rand(1, $x)];
+        $z = 0;
+        $htmlDuo = file_get_html("https://unsplash.com".$openPhoto);
+        foreach($htmlDuo->find('img') as $element){
+            $z++;
+            $photo[$z] = $element->src;
+        }
+        // zupełnie losowe zdjęcia
+        return $photo[4];
+    }
+
 ?>

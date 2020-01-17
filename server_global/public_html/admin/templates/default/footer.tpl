@@ -6,7 +6,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="{$template}/assets/js/stisla.js"></script>
 
+  <!-- JS for logged Admin -->
+  {if $user->admin}
+  <!-- General JS Scripts -->
+  <script src="{$template}/assets/modules/jquery.min.js"></script>
+  <script src="{$template}/assets/modules/popper.js"></script>
+  <script src="{$template}/assets/modules/tooltip.js"></script>
+  <script src="{$template}/assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{$template}/assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="{$template}/assets/modules/moment.min.js"></script>
+
+  
   <!-- JS Libraies -->
+  <script src="{$template}/assets/modules/jquery.sparkline.min.js"></script>
+  <script src="{$template}/assets/modules/chart.min.js"></script>
+  <script src="{$template}/assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+  <script src="{$template}/assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="{$template}/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="{$template}/assets/js/page/index.js"></script>
+  {/if}
+  <!-- End JS for logged -->
 
   <!-- Template JS File -->
   <script src="{$template}/assets/js/scripts.js"></script>
@@ -15,3 +36,7 @@
   <!-- Page Specific JS File -->
 </body>
 </html>
+
+
+  
+ 
