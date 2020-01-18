@@ -5,12 +5,12 @@
             <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
           </ul>
           <div class="search-element">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+            <input class="form-control" type="search" placeholder="Wyszukiwarka" aria-label="Search" data-width="250">
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
             <div class="search-backdrop"></div>
             <div class="search-result">
               <div class="search-header">
-                Histories
+                Historia
               </div>
               <div class="search-item">
                 <a href="#">How to hack NASA using CSS</a>
@@ -25,7 +25,7 @@
                 <a href="#" class="search-close"><i class="fas fa-times"></i></a>
               </div>
               <div class="search-header">
-                Result
+                Wyniki wyszukiwania
               </div>
               <div class="search-item">
                 <a href="#">
@@ -198,18 +198,15 @@
             <div class="d-sm-none d-lg-inline-block">Witaj, {$profile.username}</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
-              <a href="features-profile.html" class="dropdown-item has-icon">
-                <i class="far fa-user"></i> Profile
+              <a href="{$engine->domain}/admin/profile" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profil
               </a>
-              <a href="features-activities.html" class="dropdown-item has-icon">
-                <i class="fas fa-bolt"></i> Activities
-              </a>
-              <a href="features-settings.html" class="dropdown-item has-icon">
-                <i class="fas fa-cog"></i> Settings
+              <a href="{$engine->domain}/admin/setting" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Ustawienia
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
-                <i class="fas fa-sign-out-alt"></i> Logout
+              <a href="{$engine->domain}/admin/logout" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Wyloguj
               </a>
             </div>
           </li>

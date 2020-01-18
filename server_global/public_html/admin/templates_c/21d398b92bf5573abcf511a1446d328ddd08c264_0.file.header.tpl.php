@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-17 21:49:14
+/* Smarty version 3.1.34-dev-7, created on 2020-01-18 02:32:51
   from 'E:\www\4um\server_global\public_html\admin\templates\default\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e222bda4bff47_50823557',
+  'unifunc' => 'content_5e226e53bfb2b2_89623938',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '21d398b92bf5573abcf511a1446d328ddd08c264' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\header.tpl',
-      1 => 1579297751,
+      1 => 1579314760,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e222bda4bff47_50823557 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e226e53bfb2b2_89623938 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -39,6 +39,8 @@ function content_5e222bda4bff47_50823557 (Smarty_Internal_Template $_smarty_tpl)
   <?php if ($_smarty_tpl->tpl_vars['user']->value->admin) {?>
   <!-- CSS Libraries For Logged Admin -->
   <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/modules/jqvmap/dist/jqvmap.min.css">
   <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/modules/summernote/summernote-bs4.css">
@@ -46,6 +48,10 @@ function content_5e222bda4bff47_50823557 (Smarty_Internal_Template $_smarty_tpl)
 /assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
   <?php }?>
 
   <!-- Template CSS -->

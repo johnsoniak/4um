@@ -11,10 +11,13 @@
 
   {if $user->admin}
   <!-- CSS Libraries For Logged Admin -->
+  <link rel="stylesheet" href="{$template}/assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
   <link rel="stylesheet" href="{$template}/assets/modules/jqvmap/dist/jqvmap.min.css">
   <link rel="stylesheet" href="{$template}/assets/modules/summernote/summernote-bs4.css">
   <link rel="stylesheet" href="{$template}/assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="{$template}/assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{$template}/assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="{$template}/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
   {/if}
 
   <!-- Template CSS -->

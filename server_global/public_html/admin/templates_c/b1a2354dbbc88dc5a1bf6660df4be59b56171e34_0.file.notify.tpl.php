@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-17 22:11:58
+/* Smarty version 3.1.34-dev-7, created on 2020-01-18 00:49:18
   from 'E:\www\4um\server_global\public_html\admin\templates\default\notify.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e22312e2844e5_53539171',
+  'unifunc' => 'content_5e22560e108270_96010187',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b1a2354dbbc88dc5a1bf6660df4be59b56171e34' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\notify.tpl',
-      1 => 1579299115,
+      1 => 1579308555,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e22312e2844e5_53539171 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e22560e108270_96010187 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="navbar navbar-expand-lg main-navbar">
         <form class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
@@ -28,12 +28,12 @@ function content_5e22312e2844e5_53539171 (Smarty_Internal_Template $_smarty_tpl)
             <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
           </ul>
           <div class="search-element">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+            <input class="form-control" type="search" placeholder="Wyszukiwarka" aria-label="Search" data-width="250">
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
             <div class="search-backdrop"></div>
             <div class="search-result">
               <div class="search-header">
-                Histories
+                Historia
               </div>
               <div class="search-item">
                 <a href="#">How to hack NASA using CSS</a>
@@ -48,7 +48,7 @@ function content_5e22312e2844e5_53539171 (Smarty_Internal_Template $_smarty_tpl)
                 <a href="#" class="search-close"><i class="fas fa-times"></i></a>
               </div>
               <div class="search-header">
-                Result
+                Wyniki wyszukiwania
               </div>
               <div class="search-item">
                 <a href="#">
@@ -223,18 +223,18 @@ function content_5e22312e2844e5_53539171 (Smarty_Internal_Template $_smarty_tpl)
 </div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
-              <a href="features-profile.html" class="dropdown-item has-icon">
-                <i class="far fa-user"></i> Profile
+              <a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin/profile" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profil
               </a>
-              <a href="features-activities.html" class="dropdown-item has-icon">
-                <i class="fas fa-bolt"></i> Activities
-              </a>
-              <a href="features-settings.html" class="dropdown-item has-icon">
-                <i class="fas fa-cog"></i> Settings
+              <a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin/setting" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Ustawienia
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
-                <i class="fas fa-sign-out-alt"></i> Logout
+              <a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin/logout" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Wyloguj
               </a>
             </div>
           </li>

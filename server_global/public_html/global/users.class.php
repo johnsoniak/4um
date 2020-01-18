@@ -153,6 +153,15 @@ namespace {
             }
         }
 
+        // Logout Admin
+        function logoutAdmin() {
+            global $engine;
+            $engine->mysql->where("sid", $this->sid);
+            $engine->mysql->update($engine->prefix."sessions", array("admin" => 0));
+            header("Location: ".$engine->domain."/admin/");
+            return true;
+        }
+
         /* Function to loged admin */
         public function loginAdmin($password) {
             global $engine;

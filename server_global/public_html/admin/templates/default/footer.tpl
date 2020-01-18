@@ -18,14 +18,25 @@
 
   
   <!-- JS Libraies -->
+  <script src="{$template}/assets/modules/cleave-js/dist/cleave.min.js"></script>
+  <script src="{$template}/assets/modules/cleave-js/dist/addons/cleave-phone.us.js"></script>
   <script src="{$template}/assets/modules/jquery.sparkline.min.js"></script>
   <script src="{$template}/assets/modules/chart.min.js"></script>
   <script src="{$template}/assets/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
   <script src="{$template}/assets/modules/summernote/summernote-bs4.js"></script>
   <script src="{$template}/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+  
+  <script src="{$template}/assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="{$template}/assets/modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+  <script src="{$template}/assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+  <script src="{$template}/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+  <script src="{$template}/assets/modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="{$template}/assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+
 
   <!-- Page Specific JS File -->
   <script src="{$template}/assets/js/page/index.js"></script>
+  <script src="{$template}/fatal-error.js"></script>
   {/if}
   <!-- End JS for logged -->
 

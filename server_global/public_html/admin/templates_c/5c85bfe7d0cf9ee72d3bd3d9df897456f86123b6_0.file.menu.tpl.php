@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-17 22:20:51
+/* Smarty version 3.1.34-dev-7, created on 2020-01-18 01:41:06
   from 'E:\www\4um\server_global\public_html\admin\templates\default\menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e223343c8aee2_96732718',
+  'unifunc' => 'content_5e226232a105a3_34360820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c85bfe7d0cf9ee72d3bd3d9df897456f86123b6' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\menu.tpl',
-      1 => 1579299649,
+      1 => 1579311660,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e223343c8aee2_96732718 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e226232a105a3_34360820 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
@@ -47,11 +47,11 @@ function content_5e223343c8aee2_96732718 (Smarty_Internal_Template $_smarty_tpl)
             </li>
 
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-tasks"></i> <span>Rangi</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
-                <li><a class="nav-link" href="layout-transparent.html">Transparent Sidebar</a></li>
-                <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
+                <li><a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin/add-rank">Dodaj rangę</a></li>
+                <li><a class="nav-link" href="layout-transparent.html">Zarządzaj rangami</a></li>
               </ul>
             </li>
             <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>

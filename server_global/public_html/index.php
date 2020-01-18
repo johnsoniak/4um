@@ -1,5 +1,10 @@
 <?php
-require("global/config.php");
+if (file_exists("global/config.php")) {
+    require("global/config.php");
+} else {
+    header("Location: install/");
+} 
+
 require("global/functions.php");
 require("global/engine.class.php");
 require("global/users.class.php");

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-17 21:44:16
+/* Smarty version 3.1.34-dev-7, created on 2020-01-18 02:29:23
   from 'E:\www\4um\server_global\public_html\admin\templates\default\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e222ab0c55cf5_88765326',
+  'unifunc' => 'content_5e226d83a69a91_12682990',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1788eb456c9a681b7a4e17817ff90503995c767c' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\footer.tpl',
-      1 => 1579297454,
+      1 => 1579314556,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e222ab0c55cf5_88765326 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e226d83a69a91_12682990 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <!-- General JS Scripts -->
   <?php echo '<script'; ?>
  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"><?php echo '</script'; ?>
@@ -74,6 +74,14 @@ function content_5e222ab0c55cf5_88765326 (Smarty_Internal_Template $_smarty_tpl)
   <!-- JS Libraies -->
   <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/cleave-js/dist/cleave.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/cleave-js/dist/addons/cleave-phone.us.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/modules/jquery.sparkline.min.js"><?php echo '</script'; ?>
 >
   <?php echo '<script'; ?>
@@ -92,11 +100,41 @@ function content_5e222ab0c55cf5_88765326 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/modules/chocolat/dist/js/jquery.chocolat.min.js"><?php echo '</script'; ?>
 >
+  
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/bootstrap-daterangepicker/daterangepicker.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/select2/dist/js/select2.full.min.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/assets/modules/jquery-selectric/jquery.selectric.min.js"><?php echo '</script'; ?>
+>
+
 
   <!-- Page Specific JS File -->
   <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
 /assets/js/page/index.js"><?php echo '</script'; ?>
+>
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['template']->value;?>
+/fatal-error.js"><?php echo '</script'; ?>
 >
   <?php }?>
   <!-- End JS for logged -->
