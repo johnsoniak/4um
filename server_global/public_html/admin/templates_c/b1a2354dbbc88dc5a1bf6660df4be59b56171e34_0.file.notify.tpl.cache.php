@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:16:25
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:20:21
   from 'E:\www\4um\server_global\public_html\admin\templates\default\notify.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24ab09597bb2_93840587',
+  'unifunc' => 'content_5e24abf5ba9a56_37009482',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e24ab09597bb2_93840587 (Smarty_Internal_Template $_smarty_tpl) {
-?><nav class="navbar navbar-expand-lg main-navbar">
+function content_5e24abf5ba9a56_37009482 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '19189069055e24abf5adb655_17480366';
+?>
+<nav class="navbar navbar-expand-lg main-navbar">
         <form class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
             <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>

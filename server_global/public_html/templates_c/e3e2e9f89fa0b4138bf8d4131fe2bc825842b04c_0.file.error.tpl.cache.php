@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:14
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:47:43
   from 'E:\www\4um\server_global\public_html\templates\default\error.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24d5a6d70373_73361450',
+  'unifunc' => 'content_5e24b25f94a531_42318025',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e24d5a6d70373_73361450 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e24b25f94a531_42318025 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '8919173905e24b25f903822_13423474';
 if ($_smarty_tpl->tpl_vars['engine']->value->error['is']) {?>
 <div class="messageis">
 	<div class="alert alert-<?php echo $_smarty_tpl->tpl_vars['engine']->value->error['type'];?>

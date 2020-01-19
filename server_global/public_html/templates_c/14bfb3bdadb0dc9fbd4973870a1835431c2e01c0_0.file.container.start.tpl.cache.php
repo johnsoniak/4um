@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:14
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:47:43
   from 'E:\www\4um\server_global\public_html\templates\default\container.start.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24d5a6baac50_89811982',
+  'unifunc' => 'content_5e24b25f695df7_16990236',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e24d5a6baac50_89811982 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="motopress-wrapper content-holder clearfix" <?php if (isset($_smarty_tpl->tpl_vars['uDataProfile']->value) && preg_match_all('/[^\s]/u',$_smarty_tpl->tpl_vars['uDataProfile']->value['background'], $tmp)) {?> style="background: url(<?php echo $_smarty_tpl->tpl_vars['config']->value->domain;?>
+function content_5e24b25f695df7_16990236 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '6840694375e24b25f613ca1_63694881';
+?>
+<div class="motopress-wrapper content-holder clearfix" <?php if (isset($_smarty_tpl->tpl_vars['uDataProfile']->value) && preg_match_all('/[^\s]/u',$_smarty_tpl->tpl_vars['uDataProfile']->value['background'], $tmp)) {?> style="background: url(<?php echo $_smarty_tpl->tpl_vars['config']->value->domain;?>
 /<?php echo $_smarty_tpl->tpl_vars['uDataProfile']->value['background'];?>
 ) no-repeat center center fixed !important; -webkit-background-size: cover;
     -moz-background-size: cover;

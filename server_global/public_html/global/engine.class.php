@@ -1,4 +1,5 @@
 <?php
+
 namespace {
     class Engine 
     {   
@@ -95,6 +96,7 @@ namespace {
             // Ładujemy system szablonów
             require 'files/smarty/Smarty.class.php';
             $this->smarty = new Smarty;
+            $this->smarty->debugging = false;
             if (strpos($this->location, 'admin/') == false) {
                 $this->smarty->setTemplateDir('./templates/'.$config->template)
                     ->setCompileDir('./templates_c')

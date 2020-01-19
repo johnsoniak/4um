@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-12 23:14:54
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 20:19:15
   from 'E:\www\4um\server_global\public_html\templates\default\breadcrumb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e1ba86eb1ee65_55695324',
+  'unifunc' => 'content_5e24b9c303de15_90958903',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e1ba86eb1ee65_55695324 (Smarty_Internal_Template $_smarty_tpl) {
-?><section class="title-section">
+function content_5e24b9c303de15_90958903 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '3566962875e24b9c3007bb2_66702313';
+?>
+<section class="title-section">
     <h1 class="title-header"><?php echo $_smarty_tpl->tpl_vars['engine']->value->title;?>
 </h1>
 	<!-- BEGIN BREADCRUMBS-->

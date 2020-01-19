@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:14
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:47:43
   from 'E:\www\4um\server_global\public_html\templates\default\menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24d5a696fd54_76036846',
+  'unifunc' => 'content_5e24b25f3cbf43_89197980',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,8 +21,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:container.start.tpl' => 1,
   ),
 ),false)) {
-function content_5e24d5a696fd54_76036846 (Smarty_Internal_Template $_smarty_tpl) {
-?><div id="motopress-main" class="main-holder">
+function content_5e24b25f3cbf43_89197980 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '17955812185e24b25f2b3b01_52386398';
+?>
+<div id="motopress-main" class="main-holder">
  
 		<header class="motopress-wrapper header"> 
 			<div class="container">
@@ -99,6 +101,6 @@ function content_5e24d5a696fd54_76036846 (Smarty_Internal_Template $_smarty_tpl)
 				</div>
 			</div>
 		</header>
-		<?php $_smarty_tpl->_subTemplateRender("file:container.start.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+		<?php $_smarty_tpl->_subTemplateRender("file:container.start.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 02:20:28
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:16:37
   from 'E:\www\4um\server_global\public_html\admin\templates\default\add-rank.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e23bcec104328_23090450',
+  'unifunc' => 'content_5e24ab150c4fd8_45743884',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '92b75c1fb777c41dc2c6409a7a6a6cc5c4d67171' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\add-rank.tpl',
-      1 => 1579400423,
+      1 => 1579457698,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_5e23bcec104328_23090450 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e24ab150c4fd8_45743884 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
@@ -37,7 +37,8 @@ function content_5e23bcec104328_23090450 (Smarty_Internal_Template $_smarty_tpl)
             <div class="section-header">
                 <h1>Dodawanie rangi</h1>
                 <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="#">Kokpit</a></div>
+                    <div class="breadcrumb-item active"><a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin/">Kokpit</a></div>
                     <div class="breadcrumb-item"><a href="#">Rangi</a></div>
                     <div class="breadcrumb-item">Dodawanie Rangi</div>
                 </div>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:45
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 20:20:59
   from 'E:\www\4um\server_global\public_html\admin\templates\default\dashboard.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24d5c5e838f4_66707553',
+  'unifunc' => 'content_5e24ba2b56c835_17424291',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -23,21 +23,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:user-widget.tpl' => 1,
   ),
 ),false)) {
-function content_5e24d5c5e838f4_66707553 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e24ba2b56c835_17424291 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '7535770435e24ba2b4ec7f2_45166308';
 ?>
+
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
-      <?php $_smarty_tpl->_subTemplateRender("file:notify.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+      <?php $_smarty_tpl->_subTemplateRender("file:notify.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-      <?php $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+      <?php $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
           <div class="row">
-            <?php $_smarty_tpl->_subTemplateRender("file:user-widget.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+            <?php $_smarty_tpl->_subTemplateRender("file:user-widget.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
             <div class="col-lg-4 col-md-4 col-sm-12">
               <div class="card card-statistic-2">

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-17 21:31:12
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:37
   from 'E:\www\4um\server_global\public_html\admin\templates\default\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e2227a02d8138_41892681',
+  'unifunc' => 'content_5e24d5bd4bf545_41143767',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_5e2227a02d8138_41892681 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e24d5bd4bf545_41143767 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="app">
     <section class="section">
       <div class="d-flex flex-wrap align-items-stretch">

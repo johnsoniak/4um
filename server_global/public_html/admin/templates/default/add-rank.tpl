@@ -9,7 +9,7 @@
             <div class="section-header">
                 <h1>Dodawanie rangi</h1>
                 <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="#">Kokpit</a></div>
+                    <div class="breadcrumb-item active"><a href="{$engine->domain}/admin/">Kokpit</a></div>
                     <div class="breadcrumb-item"><a href="#">Rangi</a></div>
                     <div class="breadcrumb-item">Dodawanie Rangi</div>
                 </div>

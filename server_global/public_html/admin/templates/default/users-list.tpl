@@ -9,7 +9,7 @@
             <div class="section-header">
                 <h1>Lista użytkowników</h1>
                 <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="#">Kokpit</a></div>
+                    <div class="breadcrumb-item active"><a href="{$engine->domain}/admin/">Kokpit</a></div>
                     <div class="breadcrumb-item"><a href="#">Użytkownicy</a></div>
                     <div class="breadcrumb-item">Lista użytkowników</div>
                 </div>
@@ -39,6 +39,7 @@
                                         <th>#</th>
                                         <th>Login</th>
                                         <th>E-mail</th>
+                                        <th>Ranga</th>
                                         <th>Data rejestracji</th>
                                         <th>Wpisów</th>
                                         <th>Status</th>
@@ -52,6 +53,7 @@
                                             <br>{$user.username}
                                         </td>
                                         <td style="text-align:center;">{$user.email}</td>
+                                        <td><div style="background-color:{$engine->rank[$user.rank]["color"]}" class="badge badge-success">{$engine->rank[$user.rank]["name"]}</div></td>
                                         <td>{gmdate("Y-m-d H:i:s", $user.regDat)}</td>
                                         <td>{(int)$user.posts}</td>
                                         <td>
@@ -78,19 +80,21 @@
                                 </table>
                             </div>
                         </div>
+                        
                         {if $page.totalPages}
                         <div class="card-footer text-right">
                             <nav class="d-inline-block">
                                 <ul class="pagination mb-0">
+                                    {if $page.thisPage > 1}
                                     <li class="page-item disabled">
                                         <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
                                     </li>
+                                    {/if}
+                                    {for $foo=1 to $page.totalPages}
+                                    <li class="page-item{if $page.thisPage == $foo} active{/if}"><a class="page-link" href="{$engine->domain}{$engine->location}&page={$foo}">{$foo}<span class="sr-only">(current)</span></a></li>
+                                    {/for}
                                     
-                                    <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    
                                     {if $page.thisPage != $page.totalPages && $page.totalPages > 5}
                                         <li class="page-item">
                                             <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>

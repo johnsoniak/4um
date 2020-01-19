@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:20
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 20:18:37
   from 'E:\www\4um\server_global\public_html\templates\default\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24d5ac8398a5_27764046',
+  'unifunc' => 'content_5e24b99d873c55_15531259',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,8 +21,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:error.tpl' => 1,
   ),
 ),false)) {
-function content_5e24d5ac8398a5_27764046 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="row">
+function content_5e24b99d873c55_15531259 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '15339315875e24b99d077ec3_56008802';
+?>
+<div class="row">
 	<div class="span12">
 		<div style="background: #31353d; padding: 9px 10px 1px 10px; margin: 15px 0px;" class="caption caption__portfolio"> 
 			<h3 class="title">Logowanie</h3>
@@ -30,7 +32,7 @@ function content_5e24d5ac8398a5_27764046 (Smarty_Internal_Template $_smarty_tpl)
 /login.php" method="post"  id="login" class="pr30">
 					<input type="hidden" name="login" value="true">
 					
-					<?php $_smarty_tpl->_subTemplateRender("file:error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+					<?php $_smarty_tpl->_subTemplateRender("file:error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 					<div class="form-group"> 

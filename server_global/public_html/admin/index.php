@@ -50,6 +50,8 @@ switch ($action) {
             else    
                 $how = "asc";
             $engine->mysql->orderBy($order[0], $how);
+        } else {
+            $engine->mysql->orderBy("id", "asc");
         }
         if (isset($_GET["q"])) {
             $query = $_GET["q"];
@@ -57,9 +59,13 @@ switch ($action) {
             $engine->mysql->orWhere("username", '%'.$query.'%', 'like');
             $engine->mysql->orWhere("email", '%'.$query.'%', 'like');
         }
-
-        $page = 1; 
-        $engine->mysql->pageLimit = 1;
+        if (isset($_GET["page"]))
+            $page = (int)$_GET["page"];
+        else 
+            $page = 1; 
+        $engine->mysql->pageLimit = 5;
+        $location = explode("&page", $engine->location);
+        $engine->location = $location[0];
         $users = $engine->mysql->arraybuilder()->paginate($engine->prefix."accounts", $page);
         $engine->smarty->assign("users", $users);
         $pg["thisPage"] = $page;

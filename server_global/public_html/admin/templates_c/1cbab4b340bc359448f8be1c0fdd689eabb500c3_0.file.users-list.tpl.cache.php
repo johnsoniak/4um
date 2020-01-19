@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:16:25
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:20:21
   from 'E:\www\4um\server_global\public_html\admin\templates\default\users-list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24ab092fb7a9_38765329',
+  'unifunc' => 'content_5e24abf523d8b2_02628736',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,13 +22,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:menu.tpl' => 1,
   ),
 ),false)) {
-function content_5e24ab092fb7a9_38765329 (Smarty_Internal_Template $_smarty_tpl) {
-?><div id="app">
+function content_5e24abf523d8b2_02628736 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '13061099675e24abf4e7f621_34235120';
+?>
+<div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
-      <?php $_smarty_tpl->_subTemplateRender("file:notify.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+      <?php $_smarty_tpl->_subTemplateRender("file:notify.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-      <?php $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+      <?php $_smarty_tpl->_subTemplateRender("file:menu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
       <div class="main-content" style="min-height: 694px;">

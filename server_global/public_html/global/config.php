@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $config = (object) array(
     'DBuser' => "4um_global",
     'DBpass' => "Oksan@8223",

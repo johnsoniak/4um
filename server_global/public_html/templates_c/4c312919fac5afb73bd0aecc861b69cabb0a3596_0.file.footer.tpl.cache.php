@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:15
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:47:43
   from 'E:\www\4um\server_global\public_html\templates\default\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24d5a7086227_07551809',
+  'unifunc' => 'content_5e24b25fb7dd01_74801886',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,8 +21,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:container.stop.tpl' => 1,
   ),
 ),false)) {
-function content_5e24d5a7086227_07551809 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:container.stop.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+function content_5e24b25fb7dd01_74801886 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '9988245085e24b25fa539f8_57277648';
+$_smarty_tpl->_subTemplateRender("file:container.stop.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <footer class="footer">
 	<div class="container">

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 22:18:14
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 20:18:33
   from 'E:\www\4um\server_global\public_html\templates\default\portal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24d5a6cb44e6_85424179',
+  'unifunc' => 'content_5e24b9994816d9_77365234',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -15,14 +15,16 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
       1 => 1578863087,
       2 => 'file',
     ),
+    'e3e2e9f89fa0b4138bf8d4131fe2bc825842b04c' => 
+    array (
+      0 => 'E:\\www\\4um\\server_global\\public_html\\templates\\default\\error.tpl',
+      1 => 1578626868,
+      2 => 'file',
+    ),
   ),
-  'includes' => 
-  array (
-    'file:error.tpl' => 1,
-  ),
-),false)) {
-function content_5e24d5a6cb44e6_85424179 (Smarty_Internal_Template $_smarty_tpl) {
+  'cache_lifetime' => 120,
+),true)) {
+function content_5e24b9994816d9_77365234 (Smarty_Internal_Template $_smarty_tpl) {
 ?>Błędy poniżej
-<?php $_smarty_tpl->_subTemplateRender("file:error.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-}
+<?php }
 }

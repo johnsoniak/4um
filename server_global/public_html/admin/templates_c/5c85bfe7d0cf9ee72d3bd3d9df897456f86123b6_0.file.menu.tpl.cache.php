@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:16:25
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 19:20:21
   from 'E:\www\4um\server_global\public_html\admin\templates\default\menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e24ab096e6892_71386893',
+  'unifunc' => 'content_5e24abf5e49c78_77532488',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e24ab096e6892_71386893 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="main-sidebar sidebar-style-2">
+function content_5e24abf5e49c78_77532488 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '3880766885e24abf5dd55c1_86137193';
+?>
+<div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
             <a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
