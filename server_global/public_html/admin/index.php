@@ -42,8 +42,32 @@ switch ($action) {
         break;
     case "users-list":
         $engine->title = "Lista użytkowników";
+        if (isset($_GET["order-by"])) {
+                // All good
+            $order = explode(":", $_GET["order-by"]);
+            if ($order[1] == "desc")
+                $how = "desc";
+            else    
+                $how = "asc";
+            $engine->mysql->orderBy($order[0], $how);
+        }
+        if (isset($_GET["q"])) {
+            $query = $_GET["q"];
+            $engine->mysql->where ("id", $query, 'like');
+            $engine->mysql->orWhere("username", '%'.$query.'%', 'like');
+            $engine->mysql->orWhere("email", '%'.$query.'%', 'like');
+        }
+
+        $page = 1; 
+        $engine->mysql->pageLimit = 1;
+        $users = $engine->mysql->arraybuilder()->paginate($engine->prefix."accounts", $page);
+        $engine->smarty->assign("users", $users);
+        $pg["thisPage"] = $page;
+        $pg["totalPages"] = $engine->mysql->totalPages;
+        $engine->smarty->assign("page", $pg);
         $engine->addDisplay("users-list.tpl");
         $engine->display();
+        break;
     case "logout":
         $user->logoutAdmin();
         break;    

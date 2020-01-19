@@ -58,6 +58,11 @@ namespace {
         public function __construct() {
             global $config;
 
+            // Security for variables
+            $_GET   = filter_input_array(INPUT_GET, FILTER_SANITIZE_STRING);
+            $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+
             // zbieramy informacje o szablonie z konfiguracji
             $this->name = "4umEngine";       
             $this->sitename = $config->sitename;
@@ -81,13 +86,11 @@ namespace {
                 $this->clearError();
             }
 
-
             // Rank data
             $ranks = $this->mysql->get($this->prefix."ranks");
             foreach ($ranks as $rank) {
                 $this->rank[$rank["id"]] = $rank;
             }
-
 
             // Ładujemy system szablonów
             require 'files/smarty/Smarty.class.php';

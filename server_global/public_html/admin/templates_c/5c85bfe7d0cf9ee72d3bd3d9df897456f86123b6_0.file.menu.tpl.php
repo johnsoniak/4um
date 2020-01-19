@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-01-18 01:41:06
+/* Smarty version 3.1.34-dev-7, created on 2020-01-19 02:40:35
   from 'E:\www\4um\server_global\public_html\admin\templates\default\menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e226232a105a3_34360820',
+  'unifunc' => 'content_5e23c1a3725179_36872330',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c85bfe7d0cf9ee72d3bd3d9df897456f86123b6' => 
     array (
       0 => 'E:\\www\\4um\\server_global\\public_html\\admin\\templates\\default\\menu.tpl',
-      1 => 1579311660,
+      1 => 1579401631,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e226232a105a3_34360820 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e23c1a3725179_36872330 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
@@ -39,10 +39,12 @@ function content_5e226232a105a3_34360820 (Smarty_Internal_Template $_smarty_tpl)
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Użytkownicy</span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Lista użytkowników</a></li> 
+                <li><a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin/users-list">Lista użytkowników</a></li> 
                 <li><a href="#">Uprawnienia użytkowników</a></li> 
                 <li><a href="#">Zbanowane konta</a></li> 
-                <li><a href="#">Lista banów</a></li> 
+                <li><a href="<?php echo $_smarty_tpl->tpl_vars['engine']->value->domain;?>
+/admin/bans-list">Lista banów</a></li> 
               </ul>
             </li>
 

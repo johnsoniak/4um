@@ -14,10 +14,10 @@
             <li class="dropdown">
               <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Użytkownicy</span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Lista użytkowników</a></li> 
+                <li><a href="{$engine->domain}/admin/users-list">Lista użytkowników</a></li> 
                 <li><a href="#">Uprawnienia użytkowników</a></li> 
                 <li><a href="#">Zbanowane konta</a></li> 
-                <li><a href="#">Lista banów</a></li> 
+                <li><a href="{$engine->domain}/admin/bans-list">Lista banów</a></li> 
               </ul>
             </li>
 

@@ -4,4 +4,8 @@
 
     RewriteRule ^([a-zA-Z0-9-_]+)$ index.php?action=$1
 
+	RewriteCond %{THE_REQUEST} /(?:index\.php)?\?action=users-list&q=(.+)\sHTTP [NC]
+	RewriteRule ^users-list/q/%1? [NE,L,R]
+	RewriteRule ^users-list/q/([a-zA-Z0-9+@-]+)$ index.php?action=users-list&q=$1
+	RewriteRule ^users-list/order-by/([a-zA-Z0-9:]+)$ index.php?action=users-list&order-by=$1
 </IfModule>
