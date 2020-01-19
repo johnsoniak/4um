@@ -86,7 +86,6 @@ namespace {
             $ranks = $this->mysql->get($this->prefix."ranks");
             foreach ($ranks as $rank) {
                 $this->rank[$rank["id"]] = $rank;
-                $this->rank[$rank["id"]]["admin"] = $rank["addUser"];
             }
 
 
@@ -105,11 +104,6 @@ namespace {
                 $this->smarty->assign("template", $this->domain.'/admin/templates/'.$config->adminTemplate);
             } 
                 
-
-
-            
-            
-            
             if (!$this->mysql) {
                 echo "Error: Unable to connect to MySQL." . PHP_EOL;
                 echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -159,6 +153,20 @@ namespace {
                 "value" => $value
             );
             setcookie("error", serialize($err), time()+(60*5), "/");
+        }
+
+        /* Function add new rank to database */
+        public function addRank($name, $color, $access) {
+            if (strlen($access) == 0) 
+                $admin = 0;
+            else 
+                $admin = 1;
+            $data = array("name" => $name, "color" => $color, "admin" => $admin, "access" => $access);
+            
+            if ($this->mysql->insert($this->prefix."ranks", $data))
+                return true;
+            else 
+                return false;
         }
 
         /* Function Clear Error for Displayed Error */

@@ -35,6 +35,15 @@ switch ($action) {
         $engine->addDisplay("add-rank.tpl");
         $engine->display();
         break;
+    case "ranks-list":
+        $engine->title = "Lista rang";
+        $engine->addDisplay("ranks-list.tpl");
+        $engine->display();
+        break;
+    case "users-list":
+        $engine->title = "Lista użytkowników";
+        $engine->addDisplay("users-list.tpl");
+        $engine->display();
     case "logout":
         $user->logoutAdmin();
         break;    
