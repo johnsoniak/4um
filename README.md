@@ -1,7 +1,7 @@
 # 4um
 Idea of Forum engine
-4um that's script of Forum using the functions  from social media. 
-I have idea creating forum where you can do:
+4um has idea of script Forum connected with social media functions.
+I will creating forum running in real time. Additionally I will creating engine where you can do:
 * Adding friends (sending request to accepted)
 * Sending messages to friends on Chat in real time
 * Creating topic's and post's what's updated for users in real times
@@ -10,4 +10,5 @@ I have idea creating forum where you can do:
 * Settings with options changed privacy of profile. You can hide email, name and URLs in profiles for (guests, users and friends)
 
 
-I finished working with this project. This project hasn't completed. Using codes has from 2015 year and using older technology. For it I stopped working with this code.
+I finished working with this project, because scripts has creating in older technology.
+ For it this project isn't  finished to complete. Codes has from 2015 year. In this year I stopped working with this engine of forum.
